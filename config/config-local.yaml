@@ -1,0 +1,36 @@
+postgres_dsn: "SECRET"
+server_port: ":8081"
+secret_key_jwt: "SECRET"
+path_for_dictation: "/home/Documents"
+
+generate_certificates:
+  path_for_fonts: "/home/Downloads/fonts/DroidSerif-BoldItalic.ttf"
+  path_for_student_certificate_bash: "/home/Documents/gramote/student_bash.png"
+  path_for_student_certificate_rus: "/home/Documents/gramote/student_rus.png"
+  path_for_teacher_certificate_rus: "/home/Documents/gramote/teacher_rus.png"
+  path_for_teacher_certificate_bash: "/home/Documents/gramote/teacher_bash.png"
+  path_for_save_certificate: "/home/Documents/gramote/saved"
+
+soc_auth:
+  vk_app_id: "SECRET"
+  vk_callback: "https://lk.bashdiktant.ru/api/vk/callback"
+  vk_secret_key: "SECRET"
+  ok_app_id: "SECRET"
+  ok_callback: "https://lk.bashdiktant.ru/api/ok/callback"
+  ok_secret_key: "SECRET"
+  ok_public_key: "SECRET"
+  fb_app_id: "SECRET"
+  fb_callback: "https://lk.bashdiktant.ru/api/fb/callback"
+  fb_secret_key: "SECRET"
+
+telegram:
+  telegram_token: "SECRET"
+  chat_id: "-SECRET"
+
+server_email:
+  host: "smtp.yandex.ru"
+  port: "465"
+  login: "support@bashdiktant.ru"
+  pass: "SECRET"
+  email_unsubscribe: unsubscribe-bashdiktant@yandex.ru
+  email_name_sender: "Bashkirskiy Dictant"
