@@ -56,14 +56,14 @@ func SendError(err error) {
 
 	url := makeURLSendMessage(errMsg, url2.QueryEscape(err.Error()))
 	if err := send(url); err != nil {
-		logger.Err(err).Send()
+		loggerErr.Err(err).Send()
 	}
 }
 
 func SendMessage(msg string) {
 	url := makeURLSendMessage(infoMsg, url2.QueryEscape(msg))
 	if err := send(url); err != nil {
-		logger.Err(err).Send()
+		loggerErr.Err(err).Send()
 	}
 }
 
